@@ -1,0 +1,12 @@
+{
+  "ConnectionStrings": {
+    "Ecommerce": "server=ailab_demo1_db;port=3306;database=ecommerce;user=root;password=example;SslMode=None;AllowPublicKeyRetrieval=True;ConnectionTimeout=30"
+  },
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "AllowedHosts": "*"
+}

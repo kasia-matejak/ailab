@@ -1,0 +1,6 @@
+@AiLab_HostAddress = http://localhost:5002
+
+GET {{AiLab_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

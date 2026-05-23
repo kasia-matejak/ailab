@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="AiLab.Tests/AiLab.Tests.csproj" />
+  <Project Path="AiLab/AiLab.csproj" />
+  <Project Path="docker-compose.dcproj">
+    <Build />
+  </Project>
+</Solution>

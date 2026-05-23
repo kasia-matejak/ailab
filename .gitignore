@@ -1,0 +1,77 @@
+# Visual Studio / Rider
+.vs/
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build artifacts
+bin/
+obj/
+out/
+publish/
+*.app
+*.exe
+*.dll
+*.pdb
+
+# Rider / JetBrains
+*.sln.iml
+
+# NuGet
+*.nupkg
+packages/
+project.lock.json
+project.assets.json
+
+# Test results / coverage
+TestResults/
+coverage/
+*.coverage
+*.coveragexml
+*.trx
+
+# ASP.NET Core / secrets
+appsettings.*.Local.json
+secrets.json
+secrets.*.json
+
+# Databases
+*.db
+*.sqlite
+*.mdf
+*.ldf
+*.db-journal
+
+# Docker
+docker-compose.override.yml
+docker-compose.*.yml
+*.dcproj
+
+# Logs
+*.log
+logs/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+~$*
+
+# JetBrains Rider caches
+.idea/
+*.suo
+
+# JetBrains dotCover
+*.dotCover
+
+# Visual Studio Code workspace files
+*.code-workspace
+
+#gitignore
+appsettings.json

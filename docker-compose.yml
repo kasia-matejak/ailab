@@ -1,0 +1,32 @@
+services:
+  ailab:
+    image: ${DOCKER_REGISTRY-}ailab
+    build:
+      context: .
+      dockerfile: AiLab/Dockerfile
+
+  adminer:
+    image: adminer
+    restart: always
+    environment:
+      ADMINER_DEFAULT_SERVER: ailab_demo1_db
+    ports:
+        - 8082:8080
+    depends_on:
+        - ailab_demo1_db
+
+  ailab_demo1_db:
+    image: mysql:8.0
+    # NOTE: use of "mysql_native_password" is not recommended: https://dev.mysql.com/doc/refman/8.0/en/upgrading-from-previous-series.html#upgrade-caching-sha2-password
+    # (this is just an example, not intended to be a production configuration)
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    volumes:
+        - ailab_demo1_dbdata:/var/lib/mysql
+    environment:
+        MYSQL_ROOT_PASSWORD: example
+    ports:
+        - 3306:3306
+
+volumes:
+  ailab_demo1_dbdata:
