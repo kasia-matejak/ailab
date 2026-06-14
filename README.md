@@ -1,11 +1,28 @@
-# AiLab
+# AiLab - eCommerce Platform
+**AiLab - eCommerce Platform** to aplikacja webowa ASP.NET Core (.NET 8) będąca przykładowym systemem e-commerce wykorzystywanym w ramach laboratoriów TAwIDEzAI.
+Projekt ma charakter edukacyjny i demonstracyjny — kluczowym celem jest utrzymanie czytelnej, warstwowej architektury oraz dobrej separacji odpowiedzialności.
 
-Zapoznaj się z plikiem ARCHITECTURE.md aby poznać cel i zasady architektury projektu.
-Niniejszy plik zawiera instrukcje dotyczące uruchomienia projektu oraz jego konfiguracji.
+## Autor
+Katarzyna Matejak 
+
+---
 
 ## Wymagania
 - .NET 8 SDK
 - (opcjonalnie) Docker
+
+## Stack technologiczny
+Projekt wykorzystuje:
+
+- .NET 8
+- ASP.NET Core Web API
+- Entity Framework Core (Pomelo MySql)
+- FluentValidation
+- Swagger (OpenAPI)
+- Docker / docker-compose
+- xUnit (testy jednostkowe)
+
+---
 
 ## Uruchomienie lokalne
 1. Przywróć paczki:
@@ -32,3 +49,9 @@ Projekt zawiera pliki Docker / docker-compose — można uruchomić kontenery ab
 Uruchom testy z katalogu repozytorium:
 
 `dotnet test`
+
+---
+
+## Architektura
+Architektura projektu opiera się na zasadach Clean Architecture, z warstwami Controller → Service → Repository oraz wykorzystaniem Dependency Injection i Separation of Concerns.
+Szczegóły architektury dostępne znaleźć w pliku ARCHITECTURE.md.

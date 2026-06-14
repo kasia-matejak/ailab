@@ -1,25 +1,11 @@
-# 1. Cel projektu
+# Architektura projektu
 
 **AiLab** to serwis ASP.NET Core (.NET 8) będący przykładowym systemem e-commerce wykorzystywanym w ramach laboratoriów TAwIDEzAI.
 Projekt ma charakter edukacyjny i demonstracyjny — kluczowym celem jest utrzymanie czytelnej, warstwowej architektury oraz dobrej separacji odpowiedzialności.
 
 ---
 
-# 2. Stack technologiczny
-
-Projekt wykorzystuje:
-
-- .NET 8
-- ASP.NET Core Web API
-- Entity Framework Core (Pomelo MySql)
-- FluentValidation
-- Swagger (OpenAPI)
-- Docker / docker-compose
-- xUnit (testy jednostkowe)
-
----
-
-# 3. Zasady architektury
+## Zasady i wzorce projektowe
 
 Projekt opiera się na:
 
@@ -27,6 +13,8 @@ Projekt opiera się na:
 - Controller → Service → Repository pattern
 - Dependency Injection (DI)
 - Separation of Concerns (SoC)
+
+---
 
 ## Struktura warstw
 
