@@ -23,6 +23,9 @@ public static class PersistenceServiceExtensions
         services.AddScoped<IBrandRepository, BrandRepository>();
         services.AddScoped<IBrandService, BrandService>();
         services.AddSingleton<Application.Services.Validation.IBrandValidation, Application.Services.Validation.BrandValidation>();
+        services.AddScoped<IItemRepository, ItemRepository>();
+        services.AddScoped<IItemService, ItemService>();
+        services.AddSingleton<Application.Services.Validation.IItemValidation, Application.Services.Validation.ItemValidation>();
         services.AddSingleton<Application.Services.Validation.IStockValidation, Application.Services.Validation.StockValidation>();
 
         // Health check for database

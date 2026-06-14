@@ -24,21 +24,6 @@ Projekt wykorzystuje:
 
 ---
 
-## Uruchomienie lokalne
-1. Przywróć paczki:
-
-   `dotnet restore`
-
-2. Zbuduj projekt:
-
-   `dotnet build`
-
-3. Uruchom aplikację:
-
-   `dotnet run --project AiLab`
-
-Po uruchomieniu API dostępne jest domyślnie na http://localhost:5000 (lub port wskazywany przez środowisko). Swagger dostępny w trybie deweloperskim.
-
 ## Konfiguracja połączenia do bazy
 Plik konfiguracji: `AiLab/appsettings.json` (pole `ConnectionStrings:Ecommerce`).
 
